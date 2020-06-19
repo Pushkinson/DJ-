@@ -10,6 +10,7 @@
 .nav {
   display: flex;
   flex-direction: row;
+  lex-wrap: nowrap;
   justify-content: space-between;
   align-items: stretch;
   align-content: center;
@@ -20,17 +21,57 @@
   align-self: center;
 }
 
-.nav__menu ul {
+.nav__menu {
+  align-self: stretch;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   align-content: stretch;
-  min-height: 100%;
-  margin-top: 0;
 }
 
-.nav__menu ul li {
+.nav__switch {
+  display: none;
+  cursor: pointer;
+  padding-top: 35px;
+}
+
+.nav__switch span {
+  position: relative;
+  width: 36px;
+  height: 4px;
+  background: #2B2D3A;
+  display: block;
+  margin-bottom: 8px;
+  transition: 0.5s;
+}
+
+.nav__switch span:nth-child(1) {
+  transform-origin: left;
+}
+
+.nav__switch span:nth-child(2) {
+  transform-origin: center;
+}
+
+.nav__switch span:nth-child(3) {
+  transform-origin: left;
+}
+
+.nav__toggle ul {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  min-height: 100%;
+  margin: 0;
+}
+
+.nav__toggle ul li {
   align-self: stretch;
   flex-basis: 12%;
   display: flex;
@@ -42,21 +83,17 @@
   font-family: "Montserrat-Black", sans-serif;
   font-size: 1em;
   transition: 0.8s;
-  margin: 0 15px;
+  margin: 0 12px;
   padding: 0;
   min-height: 100%;
 }
 
-.nav__menu ul li:nth-child(7) {
-  cursor: default;
-}
-
-.nav__menu ul li:hover {
+.nav__toggle ul li:hover {
   border-bottom: 2px solid #397DFF;
   border-radius: 1px;
 }
 
-.nav__menu ul li a {
+.nav__toggle ul li a {
   align-self: stretch;
   display: flex;
   align-items: center;
@@ -65,43 +102,40 @@
   font-weight: normal;
   letter-spacing: 1px;
   white-space: nowrap;
-}
-
-.nav__menu ul li a:hover {
   color: #397DFF;
 }
 
-.nav .mail {
+.nav__toggle ul li a .mail {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav .mail--img {
+.nav__toggle ul li a .mail--img {
   transform: scale(0.9);
 }
 
-.nav .mail--text {
+.nav__toggle ul li a .mail--text {
   margin-left: 8px;
   color: #2B2D3A;
   font-weight: bold;
 }
 
-.nav .phone {
+.nav__toggle ul li a .phone {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav .phone--img {
+.nav__toggle ul li a .phone--img {
   transform: scale(1.1);
 }
 
-.nav .phone--text {
+.nav__toggle ul li a .phone--text {
   margin-left: 10px;
 }
 
-.nav .phone--number {
+.nav__toggle ul li a .phone--number {
   color: #2B2D3A;
   font-weight: bold;
   letter-spacing: 1.5px;
@@ -109,43 +143,16 @@
   padding-left: 1px;
 }
 
-.toggle {
-  display: none;
-  cursor: pointer;
-}
-
-.toggle span {
-  position: relative;
-  width: 36px;
-  height: 4px;
-  background: #10c9c3;
-  display: block;
-  margin-bottom: 8px;
-  transition: 0.5s;
-}
-
-.toggle span:nth-child(1) {
-  transform-origin: left;
-}
-
-.toggle span:nth-child(2) {
-  transform-origin: center;
-}
-
-.toggle span:nth-child(3) {
-  transform-origin: left;
-}
-
 .active span:nth-child(1) {
   transform: rotate(45deg);
   left: 4px;
-  background: #10c9c3;
+  background: #2B2D3A;
 }
 
 .active span:nth-child(2) {
   transform: rotate(315deg);
   right: 2px;
-  background: #10c9c3;
+  background: #2B2D3A;
 }
 
 .active span:nth-child(3) {

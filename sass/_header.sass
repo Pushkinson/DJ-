@@ -9,7 +9,7 @@
 .nav
     display: flex
     flex-direction: row
-    // flex-wrap: nowrap
+    lex-wrap: nowrap
     justify-content: space-between
     align-items: stretch
     align-content: center
@@ -18,121 +18,130 @@
 
     &__logo
         align-self: center
-        // border: 1px solid red 
+        // border: 1px solid red
 
-    &__menu ul
+    &__menu
+        align-self: stretch
         display: flex
         flex-direction: row
-        // flex-wrap: nowrap
+        flex-wrap: nowrap
         justify-content: space-between
-        align-items: center
+        align-items: stretch
         align-content: stretch
-        // border: 1px solid green
-        min-height: 100%
-        margin-top: 0
 
-    &__menu ul li
-        align-self: stretch
-        flex-basis: 12%
-        display: flex
-        align-items: center
-        justify-content: space-around
-        border-bottom: 2px solid #EBEEF5
-        list-style-type: none
-        text-transform: none
-        font-family: "Montserrat-Black", sans-serif
-        font-size: 1em
-        transition: 0.8s
-        margin: 0 15px
-        padding: 0
-        min-height: 100%
-        // border: 1px solid black
+    &__switch
+        display: none
+        cursor: pointer
+        padding-top: 35px
 
-        &:nth-child(7)
-            cursor: default
+        span 
+            position: relative
+            width: 36px
+            height: 4px
+            background: #2B2D3A
+            display: block
+            margin-bottom: 8px
+            transition: 0.5s
 
-    &__menu ul li:hover
-        border-bottom: 2px solid #397DFF
-        border-radius: 1px
+            &:nth-child(1)
+                transform-origin: left
 
-    &__menu ul li a
-        align-self: stretch
-        display: flex
-        align-items: center
-        color: rgba(43, 45, 58, 0.7)
-        transition: 0.3s
-        font-weight: normal
-        letter-spacing: 1px
-        white-space: nowrap
-        // padding-top: 15px
-        // border: 1px solid orange
+            &:nth-child(2)
+                transform-origin: center
 
-    &__menu ul li a:hover
-        color: #397DFF
-    
-    .mail
-        display: flex
-        justify-content: space-between
-        align-items: center
+            &:nth-child(3)
+                transform-origin: left
 
-        &--img
-            transform: scale(0.9)
-
-        &--text
-            margin-left: 8px
-            color: #2B2D3A
-            font-weight: bold
+    &__toggle 
+        ul
+            align-self: stretch
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: space-between
+            align-items: stretch
+            align-content: stretch
             // border: 1px solid green
+            min-height: 100%
+            margin: 0
 
-    .phone
-        display: flex
-        justify-content: space-between
-        align-items: center
+            li
+                align-self: stretch
+                flex-basis: 12%
+                display: flex
+                align-items: center
+                justify-content: space-around
+                border-bottom: 2px solid #EBEEF5
+                list-style-type: none
+                text-transform: none
+                font-family: "Montserrat-Black", sans-serif
+                font-size: 1em
+                transition: 0.8s
+                margin: 0 12px
+                padding: 0
+                min-height: 100%
+                // border: 1px solid black
 
-        &--img
-            transform: scale(1.1)
+                &:hover
+                    border-bottom: 2px solid #397DFF
+                    border-radius: 1px
 
-        &--text
-            margin-left: 10px 
+                a
+                    align-self: stretch
+                    display: flex
+                    align-items: center
+                    color: rgba(43, 45, 58, 0.7)
+                    transition: 0.3s
+                    font-weight: normal
+                    letter-spacing: 1px
+                    white-space: nowrap
+                    // padding-top: 15px
+                    // border: 1px solid orange
 
-        &--number
-            color: #2B2D3A
-            font-weight: bold
-            letter-spacing: 1.5px
-            margin-top: 5px
-            padding-left: 1px
+                    &:hover
+                    color: #397DFF
 
-.toggle
-    display: none
-    cursor: pointer
+                    .mail
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
 
-    span 
-        position: relative
-        width: 36px
-        height: 4px
-        background: #10c9c3
-        display: block
-        margin-bottom: 8px
-        transition: 0.5s
+                        &--img
+                            transform: scale(0.9)
 
-        &:nth-child(1)
-            transform-origin: left
+                        &--text
+                            margin-left: 8px
+                            color: #2B2D3A
+                            font-weight: bold
+                            // border: 1px solid green
 
-        &:nth-child(2)
-            transform-origin: center
+                    .phone
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
 
-        &:nth-child(3)
-            transform-origin: left
+                        &--img
+                            transform: scale(1.1)
+
+                        &--text
+                            margin-left: 10px 
+
+                        &--number
+                            color: #2B2D3A
+                            font-weight: bold
+                            letter-spacing: 1.5px
+                            margin-top: 5px
+                            padding-left: 1px
 
 .active span:nth-child(1)
     transform: rotate(45deg)
     left: 4px
-    background: #10c9c3
+    background: #2B2D3A
 
 .active span:nth-child(2)
     transform: rotate(315deg)
     right: 2px
-    background: #10c9c3
+    background: #2B2D3A
 
 .active span:nth-child(3)
     transform: scaleX(0)
@@ -141,3 +150,5 @@
         content: ''
         display: table
         clear: both 
+
+    

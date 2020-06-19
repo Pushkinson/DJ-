@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-    $('.toggle').click(function(){
-        $('.toggle').toggleClass('active')
-        $('.toggle__menu').toggleClass('active__menu')
+    $('.nav__switch').click(function(){
+        $('.nav__switch').toggleClass('active')
+        $('.nav__toggle').toggleClass('active__menu')
       });
 });
