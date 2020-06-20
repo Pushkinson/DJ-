@@ -14,7 +14,7 @@
 .nav
     display: flex
     flex-direction: row
-    lex-wrap: nowrap
+    flex-wrap: nowrap
     justify-content: space-between
     align-items: stretch
     align-content: center
@@ -56,90 +56,89 @@
 
             &:nth-child(3)
                 transform-origin: left
+    
+    &__ul
+        align-self: stretch
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: space-between
+        align-items: stretch
+        align-content: stretch
+        // border: 1px solid green
+        min-height: 100%
+        margin: 0
 
-    &__toggle 
-        ul
+    &__li
+        align-self: stretch
+        flex-basis: 12%
+        display: flex
+        align-items: center
+        justify-content: space-around
+        border-bottom: 2px solid #EBEEF5
+        list-style-type: none
+        text-transform: none
+        font-family: "Roboto-Light", sans-serif
+        font-size: 1em
+        transition: 0.8s
+        margin: 0 12px
+        padding: 0
+        min-height: 100%
+        // border: 1px solid black
+
+        &:hover
+            border-bottom: 2px solid #397DFF
+            border-radius: 1px
+
+        a
             align-self: stretch
             display: flex
-            flex-direction: row
-            flex-wrap: nowrap
-            justify-content: space-between
-            align-items: stretch
-            align-content: stretch
-            // border: 1px solid green
-            min-height: 100%
-            margin: 0
+            align-items: center
+            color: rgba(43, 45, 58, 0.7)
+            transition: 0.3s
+            font-weight: normal
+            letter-spacing: 1px
+            white-space: nowrap
+            // padding-top: 15px
+            // border: 1px solid orange
 
-            li
-                align-self: stretch
-                flex-basis: 12%
+            &:hover
+                color: #397DFF
+
+            .mail
                 display: flex
+                justify-content: space-between
                 align-items: center
-                justify-content: space-around
-                border-bottom: 2px solid #EBEEF5
-                list-style-type: none
-                text-transform: none
-                font-family: "Roboto-Light", sans-serif
-                font-size: 1em
-                transition: 0.8s
-                margin: 0 12px
-                padding: 0
-                min-height: 100%
-                // border: 1px solid black
 
-                &:hover
-                    border-bottom: 2px solid #397DFF
-                    border-radius: 1px
+                &--img
+                    transform: scale(0.9)
 
-                a
-                    align-self: stretch
-                    display: flex
-                    align-items: center
-                    color: rgba(43, 45, 58, 0.7)
-                    transition: 0.3s
-                    font-weight: normal
-                    letter-spacing: 1px
-                    white-space: nowrap
-                    // padding-top: 15px
-                    // border: 1px solid orange
+                &--text
+                    margin-left: 8px
+                    color: #2B2D3A
+                    font-weight: bold
+                    // border: 1px solid green
 
-                    &:hover
-                        color: #397DFF
+            .phone
+                display: flex
+                justify-content: space-between
+                align-items: center
 
-                    .mail
-                        display: flex
-                        justify-content: space-between
-                        align-items: center
+                &--img
+                    transform: scale(1.1)
 
-                        &--img
-                            transform: scale(0.9)
+                &--text
+                    margin-left: 10px
 
-                        &--text
-                            margin-left: 8px
-                            color: #2B2D3A
-                            font-weight: bold
-                            // border: 1px solid green
+                &--call
+                    color: #397DFF 
 
-                    .phone
-                        display: flex
-                        justify-content: space-between
-                        align-items: center
-
-                        &--img
-                            transform: scale(1.1)
-
-                        &--text
-                            margin-left: 10px
-
-                        &--call
-                            color: #397DFF 
-
-                        &--number
-                            color: #2B2D3A
-                            font-weight: bold
-                            letter-spacing: 1.5px
-                            margin-top: 5px
-                            padding-left: 1px
+                &--number
+                    color: #2B2D3A
+                    font-weight: bold
+                    letter-spacing: 1.5px
+                    margin-top: 5px
+                    padding-left: 1px
 
 .active
     span:nth-child(1)

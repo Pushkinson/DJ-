@@ -23,20 +23,20 @@
                         <span></span>
                     </div>
                     <div class="nav__toggle"> 
-                        <ul>
-                            <li><a href="#home">Главная</a></li>
-                            <li><a href="#about">Проекты</a></li>
-                            <li><a href="#work">Услуги</a></li>
-                            <li><a href="#process">О компании</a></li>
-                            <li><a href="#services">Готовые решения</a></li>
-                            <li><a href="#testimonials">Контакты</a></li>
-                            <li><a href="">
+                        <div class="nav__ul">
+                            <div class="nav__li nav__li--home nav__mobile"><a href="#home">Главная</a></div>
+                            <div class="nav__li nav__li--projects nav__mobile"><a href="#projects">Проекты</a></div>
+                            <div class="nav__li nav__li--service nav__mobile"><a href="#service">Услуги</a></div>
+                            <div class="nav__li nav__li--about nav__mobile"><a href="#about">О компании</a></div>
+                            <div class="nav__li nav__li--solutions nav__mobile"><a href="#solutions">Готовые решения</a></div>
+                            <div class="nav__li nav__li--contacts nav__mobile"><a href="#contacts">Контакты</a></div>
+                            <div class="nav__li nav__li--mail nav__mobile"><a href="">
                                 <div class="mail">
                                     <div class="mail--img"><img src="./img/mail_icon.png"></div>
                                     <div class="mail--text">info@sld-store.tu</div>
                                 </div>
-                            </a></li>
-                            <li><a href="#phone">
+                            </a></div>
+                            <div class="nav__li nav__li--phone nav__mobile"><a href="#phone">
                                 <div class="phone">
                                     <div class="phone--img"><img src="./img/phone_icon.png"></div>
                                     <div class="phone--text">
@@ -44,8 +44,8 @@
                                         <div class="phone--number">8 812 615-62-79</div>
                                     </div>
                                 </div>
-                            </a></li>
-                        </ul>   
+                            </a></div>
+                        </div>   
                     </div> 
                 </div>
             </nav>
@@ -56,13 +56,45 @@
             <div class="wrapper slider__wrapper">
                 <div class="slider__container">
                     <div class="slider__for">
-                        <h3>Оснащение конференц-залов</h3>
-                        <h1>Видео конференции</h1>
-                        <p>Профессиональное оборудование для конференц-залов предназначено
-                             для проведения и организации презентаций, совещаний, бизнес-тренингов и онлайн-трансляции контента.</p>
-                        <div class="row">
-                            <button class="button">Обратный звонок</button>
-                            <button class="button">Заполнить бриф</button>
+                        <div class="slider__for--content">
+                            <h3>Оснащение конференц-залов</h3>
+                            <h1>Видео конференции1</h1>
+                            <p>Профессиональное оборудование для конференц-залов предназначено
+                                    для проведения и организации презентаций, совещаний, бизнес-тренингов и онлайн-трансляции контента.</p>
+                            <div class="row">
+                                <button class="button">Обратный звонок</button>
+                                <button class="button">Заполнить бриф</button>
+                            </div>
+                        </div>
+                        <div class="slider__for--content">
+                            <h3>Оснащение конференц-залов</h3>
+                            <h1>Видео конференции2</h1>
+                            <p>Профессиональное оборудование для конференц-залов предназначено
+                                    для проведения и организации презентаций, совещаний, бизнес-тренингов и онлайн-трансляции контента.</p>
+                            <div class="row">
+                                <button class="button">Обратный звонок</button>
+                                <button class="button">Заполнить бриф</button>
+                            </div>
+                        </div>
+                        <div class="slider__for--content">
+                            <h3>Оснащение конференц-залов</h3>
+                            <h1>Видео конференции3</h1>
+                            <p>Профессиональное оборудование для конференц-залов предназначено
+                                    для проведения и организации презентаций, совещаний, бизнес-тренингов и онлайн-трансляции контента.</p>
+                            <div class="row">
+                                <button class="button">Обратный звонок</button>
+                                <button class="button">Заполнить бриф</button>
+                            </div>
+                        </div>
+                        <div class="slider__for--content">
+                            <h3>Оснащение конференц-залов</h3>
+                            <h1>Видео конференции4</h1>
+                            <p>Профессиональное оборудование для конференц-залов предназначено
+                                    для проведения и организации презентаций, совещаний, бизнес-тренингов и онлайн-трансляции контента.</p>
+                            <div class="row">
+                                <button class="button">Обратный звонок</button>
+                                <button class="button">Заполнить бриф</button>
+                            </div>
                         </div>
                     </div>
                     <div class="slider__nav">
@@ -94,13 +126,25 @@
     <section class="block">
         <div class="wrapper block__wrapper">
             <div class="block__container">
-                <div class="block__img block__img--1"><img src="./img/block-img-1.png" alt="img--1"></div>
+                <div class="block__img block__img--1"></div>
                 <div class="block__img block__img--2">
-                    <img src="./img/block-img-2.png" alt="img--2">
-                    <map name="about">
-                        <area shape="circle" coords="200, 200, 60" href="#" alt="Описание" title="Описание" target="_blank">
-                    </map>
-                    <!-- <button class="block__img--plus"><img src="img/block-img-plus.png"></button> -->
+                    <div class="block__leftCol">
+                        <div class="block__useCol"><img src="img/col-2.png">
+                            <div class="block__plus"><img src="img/block-img-plus.png">
+                                <div class="block__popup">
+                                    <div class="block__row">
+                                        <h4>Electro-Voice</br> EVID 4.2</h4>
+                                        <img src="./img/popup-col.png" alt="">
+                                    </div>
+                                    <div class="block__popup__li"><img src="img/ellipse.png">Очень мягкое звучание.</div>
+                                    <div class="block__popup__li"><img src="img/ellipse.png">Чувствительность — 89 дБ.</div>
+                                    <div class="block__popup__li"><img src="img/ellipse.png">Пиковая мощность — 400 Вт.</div>
+                                    <div class="block__popup__li"><img src="img/ellipse.png">Степень влагозащищенности IP34.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block__rightCol"><img src="img/col-1.png"></div>
                 </div>
             </div>
         </div>
@@ -109,7 +153,7 @@
     <script src="./js/libs.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/slick.js"></script>
     <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script> -->
     <script src="./js/common.js"></script>
 </body>
