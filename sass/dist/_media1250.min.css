@@ -1,1 +1,1 @@
-@media only screen and (max-width:1250px){.nav__menu ul{flex-wrap:wrap}.nav__menu ul li{flex-basis:20%}}
+@media only screen and (max-width:1250px){.nav{justify-content:space-around}.nav__toggle ul{flex-wrap:wrap}.nav__toggle ul li{flex-basis:25%;margin:0}.nav__toggle ul li a{flex-grow:1;padding:0 auto}}

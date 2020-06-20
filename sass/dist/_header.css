@@ -3,6 +3,12 @@
   position: relative;
 }
 
+.header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .header__wrapper {
   max-width: 1220px;
 }
@@ -80,7 +86,7 @@
   border-bottom: 2px solid #EBEEF5;
   list-style-type: none;
   text-transform: none;
-  font-family: "Montserrat-Black", sans-serif;
+  font-family: "Roboto-Light", sans-serif;
   font-size: 1em;
   transition: 0.8s;
   margin: 0 12px;
@@ -102,6 +108,9 @@
   font-weight: normal;
   letter-spacing: 1px;
   white-space: nowrap;
+}
+
+.nav__toggle ul li a:hover {
   color: #397DFF;
 }
 
@@ -135,6 +144,10 @@
   margin-left: 10px;
 }
 
+.nav__toggle ul li a .phone--call {
+  color: #397DFF;
+}
+
 .nav__toggle ul li a .phone--number {
   color: #2B2D3A;
   font-weight: bold;
@@ -163,4 +176,26 @@
   content: '';
   display: table;
   clear: both;
+}
+
+.active span {
+  position: relative;
+  width: 36px;
+  height: 4px;
+  background: #2B2D3A;
+  display: block;
+  margin-bottom: 8px;
+  transition: 0.5s;
+}
+
+.active span:nth-child(1) {
+  transform-origin: left;
+}
+
+.active span:nth-child(2) {
+  transform-origin: center;
+}
+
+.active span:nth-child(3) {
+  transform-origin: left;
 }

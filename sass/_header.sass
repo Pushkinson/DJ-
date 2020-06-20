@@ -3,6 +3,11 @@
     position: relative
     // border: 1px solid blue
 
+    &::after
+        content: ''
+        display: table
+        clear: both
+
     &__wrapper
         max-width: 1220px
 
@@ -74,7 +79,7 @@
                 border-bottom: 2px solid #EBEEF5
                 list-style-type: none
                 text-transform: none
-                font-family: "Montserrat-Black", sans-serif
+                font-family: "Roboto-Light", sans-serif
                 font-size: 1em
                 transition: 0.8s
                 margin: 0 12px
@@ -99,7 +104,7 @@
                     // border: 1px solid orange
 
                     &:hover
-                    color: #397DFF
+                        color: #397DFF
 
                     .mail
                         display: flex
@@ -124,7 +129,10 @@
                             transform: scale(1.1)
 
                         &--text
-                            margin-left: 10px 
+                            margin-left: 10px
+
+                        &--call
+                            color: #397DFF 
 
                         &--number
                             color: #2B2D3A
@@ -133,22 +141,41 @@
                             margin-top: 5px
                             padding-left: 1px
 
-.active span:nth-child(1)
-    transform: rotate(45deg)
-    left: 4px
-    background: #2B2D3A
+.active
+    span:nth-child(1)
+        transform: rotate(45deg)
+        left: 4px
+        background: #2B2D3A
 
-.active span:nth-child(2)
-    transform: rotate(315deg)
-    right: 2px
-    background: #2B2D3A
+    span:nth-child(2)
+        transform: rotate(315deg)
+        right: 2px
+        background: #2B2D3A
 
-.active span:nth-child(3)
-    transform: scaleX(0)
+    span:nth-child(3)
+        transform: scaleX(0)
 
-    &::after
-        content: ''
-        display: table
-        clear: both 
+        &::after
+            content: ''
+            display: table
+            clear: both 
+
+    span 
+        position: relative
+        width: 36px
+        height: 4px
+        background: #2B2D3A
+        display: block
+        margin-bottom: 8px
+        transition: 0.5s
+
+        &:nth-child(1)
+            transform-origin: left
+
+        &:nth-child(2)
+            transform-origin: center
+
+        &:nth-child(3)
+            transform-origin: left
 
     

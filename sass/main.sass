@@ -21,38 +21,61 @@ a
 
 h1 
     margin: 0
-    font-size: 2.5em
-    letter-spacing: 1px
-    color: #1d1d1d
+    font-size: 3.7em
+    letter-spacing: 2px
+    line-height: 63px
+    color: #ffffff
     text-align: left
-    font-family: "PlayfairDisplay-Black", sans-serif
+    font-family: "Roboto-Light", sans-serif
+    font-style: normal
+    font-weight: 600
 
 h2 
     margin: 0
-    text-align: center
-    font-family: "PlayfairDisplay-Bold", sans-serif
     font-size: 1.7em
+    letter-spacing: 1px
+    line-height: 40px
     color: #1d1d1d
+    text-align: left
+    font-family: "Roboto-Light", sans-serif
 
 h3 
     margin: 0
-    text-align: center
-    font-family: "Roboto-Black", sans-serif
-    font-size: 1em
-    transition: 0.4s
-    color: #1d1d1d
+    font-size: 1.3em
+    letter-spacing: 2px
+    line-height: 22px
+    color: #ffffff
+    text-align: left
+    font-family: "Roboto-Light", sans-serif
+    font-style: normal
+    font-weight: 500
+    transition: 0.4s    
 
 p 
     margin: 0
     font-family: "Roboto-Light", sans-serif
     font-size: 1em
     letter-spacing: 1px
-    color: #8f8f8f
+    color: rgba(255, 255, 255, 0.8)
     line-height: 17px
 
 .wrapper
     margin: 0 auto
     padding: 0 10px
-    max-width: 1220px
 
-@import "header", "slider", "media1250", "media980"
+.button
+    align-items: center
+    text-align: center
+    font-size: 1.1em
+    color: #ffffff
+    border: 1px solid #ffffff
+    border-radius: 8px
+    background-color: rgba(0, 0, 0, 0)
+    transition: 0.5s
+    padding: 10px 20px
+
+    &:hover
+        background-color: #397DFF
+        border: 1px solid #397DFF
+
+@import "fonts", "vars", "header", "slider", "block", "media1250", "media980", "media480"

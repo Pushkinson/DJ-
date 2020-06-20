@@ -3,8 +3,56 @@
     background-image: url("../img/slider-back.png")
     background-size: cover
     background-position: 50% 42%
+    // max-width: 1920px
+
+    &::after
+        content: ''
+        display: table
+        clear: both
+
+    &__wrapper
+        max-width: 1220px
 
     &__shadow
         min-height: 624px
         background: rgba(0, 0, 0, 0.5)
         background-size: cover
+
+    &__container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+        padding-top: 130px
+
+    &__for
+        flex-basis: 42%
+
+        h1 
+            margin-top: 35px
+            margin-bottom: 60px
+
+        p 
+            font-size: 1.2em
+            margin-bottom: 45px
+            line-height: 148%
+
+        .button
+            margin-right: 20px
+
+    &__nav
+        flex-basis: 30%
+        align-self: flex-end
+
+        .num
+            font-family: "Roboto-Black",sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 4.5em
+            line-height: 78px
+            letter-spacing: 1px
+            color: #397DFF
+
+        p 
+            line-height: 160%
+            color: rgba(255, 255, 255, 0.7)
