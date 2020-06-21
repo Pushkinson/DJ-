@@ -1,17 +1,13 @@
-$(document).ready(function(){
+"use strict";
 
-  $('.nav__switch').click(function(){
-    $('.nav__switch').toggleClass('active')
-    $('.nav__toggle').toggleClass('active__menu')
+$(document).ready(function () {
+  $('.nav__switch').click(function () {
+    $('.nav__switch').toggleClass('active');
+    $('.nav__toggle').toggleClass('active__menu');
   });
-
-  $('.block__plus').click(function(){
-    $('.block__popup').toggleClass('popup__hide')
-  });
-
-
-
-  // $('.slider__for').slick({
+  $('.block__plus').click(function () {
+    $('.block__popup').toggleClass('popup__hide');
+  }); // $('.slider__for').slick({
   //   slidesToShow: 1,
   //   slidesToScroll: 1,
   //   arrows: false,
@@ -26,7 +22,6 @@ $(document).ready(function(){
   //   centerMode: false,
   //   focusOnSelect: true
   // });
-
   // $('.slider__for').slick({
   //   infinite: true,
   //   slidesToShow: 1,

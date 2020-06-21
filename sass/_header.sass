@@ -1,12 +1,7 @@
 .header
     background-color: #EBEEF5
-    position: relative
+    // position: relative
     // border: 1px solid blue
-
-    &::after
-        content: ''
-        display: table
-        clear: both
 
     &__wrapper
         max-width: 1220px
@@ -40,7 +35,7 @@
         padding-top: 35px
 
         span 
-            position: relative
+            // position: relative
             width: 36px
             height: 4px
             background: #2B2D3A
@@ -131,7 +126,7 @@
                     margin-left: 10px
 
                 &--call
-                    color: #397DFF 
+                    color: #397DFF
 
                 &--number
                     color: #2B2D3A
@@ -139,6 +134,62 @@
                     letter-spacing: 1.5px
                     margin-top: 5px
                     padding-left: 1px
+
+    &__popup
+        position: absolute
+        top: 0
+        left: 30%
+        width: 538px
+        // height: 407px
+        border: 1px solid blue 
+        display: flex
+        flex-direction: column
+        align-items: stretch
+        justify-content: space-around
+        z-index: 10
+        background-color: #ffffff
+        border-radius: 16px
+        padding: 32px 42px
+
+        h4 
+            // font-family: 
+            font-weight: 600
+            font-size: 1.7em
+            line-height: 29px
+            color: #2B2D3A
+
+        p
+            // font-family: 
+            font-weight: normal
+            font-size: 1.1em
+            line-height: 160% 
+            color: #2B2D3A
+
+    &__form
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        align-items: stretch
+        align-content: center
+
+    &__input
+        width: 100%
+
+        &--name
+            content: 'Имя*'
+
+        &--accept
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: left
+
+            p 
+                margin-top: 2px
+                margin-left: 5px
+                
+
+        
 
 .active
     span:nth-child(1)

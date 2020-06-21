@@ -21,10 +21,6 @@
             background-size: cover
             background-position: 50% 50%
 
-            // img 
-            //     display: block
-            //     max-width: 100%
-
         &--2
             flex-basis: 60%
             background: url('../img/block-img-2.png')
@@ -44,6 +40,7 @@
         position: absolute
         top: 10%
         left: 0
+        cursor: pointer
 
     &__rightCol
         position: absolute
@@ -51,6 +48,9 @@
         left: 70%
     
     &__popup
+        position: absolute
+        top: -254%
+        left: -170%
         width: 350px
         // height: 180px
         display: flex
@@ -59,7 +59,17 @@
         justify-content: space-between
         border-radius: 10px
         background-color: #ffffff
-        padding: 17px 25px
+        padding: 13px 25px
+
+        &::before
+            position: absolute
+            bottom: -7%
+            left: 42%
+            content: ""
+            width: 28px
+            height: 20px
+            background-color: #ffffff
+            clip-path: polygon(100% 0, 50% 100%, 0 0)
 
     &__row
         display: flex
@@ -68,10 +78,11 @@
         position: relative
 
         &::before
-            content: 'X'
+            content: "\D7"
             position: absolute
-            top: 2%
-            right: 2%
+            top: -5%
+            right: -3%
+            transform: scale(1.8)
 
         h4 
             padding-top: 15px
@@ -89,3 +100,6 @@
             width: 16px
             height: 16px
             margin-right: 8px
+
+.popup__hide
+    display: none
