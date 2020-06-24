@@ -25,6 +25,8 @@ p { margin: 0; font-family: "Roboto-Light", sans-serif; font-size: 1em; letter-s
 
 .button:hover { background-color: #397DFF; border: 1px solid #397DFF; }
 
+.popup__hide { display: none; }
+
 @font-face { font-family: "Roboto-Thin"; font-weight: normal; font-style: normal; src: url("../fonts/Roboto-Thin.eot"); src: url("../fonts/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Thin.woff") format("ttf"), url("../fonts/Roboto-Thin.ttf") format("truetype"); }
 
 @font-face { font-family: "Montserrat-Black"; font-weight: normal; font-style: normal; src: url("../fonts/Montserrat-Black.eot"); src: url("../fonts/Montserrat-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Black.woff") format("ttf"), url("../fonts/Montserrat-Black.ttf") format("truetype"); }
@@ -77,7 +79,7 @@ p { margin: 0; font-family: "Roboto-Light", sans-serif; font-size: 1em; letter-s
 
 .nav__li a .mail--text { margin-left: 8px; color: #2B2D3A; font-weight: bold; }
 
-.nav__li a .phone { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.nav__li a .phone { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; position: relative; }
 
 .nav__li a .phone--img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
 
@@ -87,21 +89,33 @@ p { margin: 0; font-family: "Roboto-Light", sans-serif; font-size: 1em; letter-s
 
 .nav__li a .phone--number { color: #2B2D3A; font-weight: bold; letter-spacing: 1.5px; margin-top: 5px; padding-left: 1px; }
 
-.nav__popup { position: absolute; top: 0; left: 30%; width: 538px; border: 1px solid blue; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: stretch; -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; z-index: 10; background-color: #ffffff; border-radius: 16px; padding: 32px 42px; }
+.nav__popup { position: absolute; top: 1%; left: 40%; width: 538px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: stretch; -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; z-index: 5; background-color: #ffffff; border-radius: 16px; padding: 32px 35px; }
 
 .nav__popup h4 { font-weight: 600; font-size: 1.7em; line-height: 29px; color: #2B2D3A; }
 
-.nav__popup p { font-weight: normal; font-size: 1.1em; line-height: 160%; color: #2B2D3A; }
+.nav__popup p { font-weight: normal; font-size: 1.1em; line-height: 160%; color: #2B2D3A; padding-top: 12px; padding-bottom: 28px; }
+
+.nav__popup--close { position: absolute; top: 0%; right: 0%; -webkit-transform: scale(0.4); -ms-transform: scale(0.4); transform: scale(0.4); z-index: 6; cursor: pointer; z-index: 12; }
 
 .nav__form { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-align: stretch; -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch; -webkit-align-content: center; -ms-flex-line-pack: center; align-content: center; }
 
-.nav__input { width: 100%; }
+.nav__input { font-style: normal; font-weight: normal; font-size: 16px; line-height: 114%; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 9px; letter-spacing: 3px; padding: 15px 10px; margin-bottom: 24px; width: 100%; }
 
 .nav__input--name { content: 'Имя*'; }
 
 .nav__input--accept { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-pack: left; -webkit-justify-content: left; -ms-flex-pack: left; justify-content: left; }
 
 .nav__input--accept p { margin-top: 2px; margin-left: 5px; }
+
+.nav__input:focus { border: none; }
+
+.nav__input:active { border: none; }
+
+.nav__input--accept { border: none; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-bottom: 5px; }
+
+.nav__input--accept p { font-style: normal; font-weight: normal; font-size: 0.85em; line-height: 17px; margin: 0; padding: 0; }
+
+.nav__submit { font-style: normal; font-weight: 600; font-size: 18px; line-height: 22px; background-color: #397DFF; border: 1px solid #397DFF; border-radius: 8px; color: #ffffff; padding: 16px 0; }
 
 .active span:nth-child(1) { -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); left: 4px; background: #2B2D3A; }
 
@@ -176,8 +190,6 @@ p { margin: 0; font-family: "Roboto-Light", sans-serif; font-size: 1em; letter-s
 .block__popup__li { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-style: normal; font-family: "Roboto-Light", sans-serif; font-weight: normal; font-size: 0.9em; line-height: 142%; padding: 5px 0; }
 
 .block__popup__li img { width: 16px; height: 16px; margin-right: 8px; }
-
-.popup__hide { display: none; }
 
 @media only screen and (max-width: 1250px) { .nav { -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
   .nav__ul { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }

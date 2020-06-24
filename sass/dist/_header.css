@@ -127,6 +127,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .nav__li a .phone--img {
@@ -151,18 +152,17 @@
 
 .nav__popup {
   position: absolute;
-  top: 0;
-  left: 30%;
+  top: 1%;
+  left: 40%;
   width: 538px;
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: space-around;
-  z-index: 10;
+  z-index: 5;
   background-color: #ffffff;
   border-radius: 16px;
-  padding: 32px 42px;
+  padding: 32px 35px;
 }
 
 .nav__popup h4 {
@@ -177,6 +177,18 @@
   font-size: 1.1em;
   line-height: 160%;
   color: #2B2D3A;
+  padding-top: 12px;
+  padding-bottom: 28px;
+}
+
+.nav__popup--close {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transform: scale(0.4);
+  z-index: 6;
+  cursor: pointer;
+  z-index: 12;
 }
 
 .nav__form {
@@ -188,6 +200,15 @@
 }
 
 .nav__input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 114%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 9px;
+  letter-spacing: 3px;
+  padding: 15px 10px;
+  margin-bottom: 24px;
   width: 100%;
 }
 
@@ -205,6 +226,43 @@
 .nav__input--accept p {
   margin-top: 2px;
   margin-left: 5px;
+}
+
+.nav__input:focus {
+  border: none;
+}
+
+.nav__input:active {
+  border: none;
+}
+
+.nav__input--accept {
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.nav__input--accept p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.85em;
+  line-height: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__submit {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: #397DFF;
+  border: 1px solid #397DFF;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 16px 0;
 }
 
 .active span:nth-child(1) {
