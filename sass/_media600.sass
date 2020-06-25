@@ -1,0 +1,96 @@
+@media only screen and (max-width: 600px)
+    .nav
+        &__popup
+            top: 12%
+            left: 17%
+            width: 343px
+            height: 346px
+            padding: 16px 10px 0
+
+            h4 
+                font-weight: 600
+                font-size: 1.4em
+                line-height: 26px
+                letter-spacing: 1px
+                color: #2B2D3A
+                padding-top: 20px
+
+            p 
+                font-weight: normal
+                font-size: 0.8em
+                line-height: 160% 
+                color: #2B2D3A
+                padding: 0 
+
+            &--close
+                position: absolute
+                top: -5%
+                right: -5%
+                transform: scale(0.3)
+                z-index: 6
+                cursor: pointer
+
+        &__input
+            font-size: 1em
+            padding: 7px 15px
+            margin-bottom: 15px
+
+            &:focus
+                border: none
+
+            &:active
+                border: none         
+
+            &--accept
+                border: none
+                display: flex
+                justify-content: flex-start 
+                align-items: center
+                padding: 0
+                margin-top: 10px
+                margin-bottom: 10px
+
+                p 
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 0.64em
+                    line-height: 11px
+                    padding-left: 10px
+                    letter-spacing: normal
+
+        &__submit
+            font-weight: 500
+            font-size: 1.3em
+            line-height: 20px
+            padding: 13px 0 
+            margin-bottom: -10px  
+
+        &__answer
+            top: 12%
+            left: 17%
+            width: 343px
+            height: 346px
+            padding: 20px 10px 0 10px
+
+            img 
+                padding-top: 10px
+                margin-bottom: 5px
+
+            p 
+                letter-spacing: normal
+                line-height: 122%            
+
+            button
+                margin: 10px
+
+            &--close
+                position: absolute
+                top: -5%
+                right: -5%
+
+    // .block
+    //     &__img--1
+    //         background: url('../img/block-img-1.png')
+    //         background-size: cover
+    //         background-position: 50% 50%
+    //         transform: scale(0.5)

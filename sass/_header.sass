@@ -136,12 +136,18 @@
                     margin-top: 5px
                     padding-left: 1px
 
+    &__mobile--phone
+        display: none
+
+    &__mobile--mail
+        display: none
+
     &__popup
         position: absolute
         top: 1%
         left: 40%
         width: 538px
-        // height: 407px
+        height: 420px
         display: flex
         flex-direction: column
         align-items: stretch
@@ -174,7 +180,6 @@
             transform: scale(0.4)
             z-index: 6
             cursor: pointer
-            z-index: 12
 
     &__form
         display: flex
@@ -186,7 +191,7 @@
     &__input
         font-style: normal
         font-weight: normal
-        font-size: 16px
+        font-size: 1.1em
         line-height: 114%
         border: 1px solid rgba(0, 0, 0, 0.2)
         border-radius: 9px
@@ -203,18 +208,6 @@
             flex-direction: row
             flex-wrap: nowrap
             justify-content: left
-
-            p 
-                margin-top: 2px
-                margin-left: 5px 
-
-        &:focus
-            border: none
-
-        &:active
-            border: none         
-
-        &--accept
             border: none
             display: flex
             justify-content: flex-start 
@@ -228,6 +221,16 @@
                 line-height: 17px
                 margin: 0
                 padding: 0
+                padding-left: 10px
+
+        &:focus
+            border: none
+
+        &:active
+            border: none         
+
+        &--accept
+            
 
     &__submit
         // font-family: Montserrat
@@ -239,7 +242,55 @@
         border: 1px solid #397DFF
         border-radius: 8px
         color: #ffffff
-        padding: 16px 0             
+        padding: 16px 0   
+
+    &__answer
+        position: absolute
+        top: 1%
+        left: 40%
+        width: 538px
+        height: 420px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-around
+        z-index: 8
+        background-color: #ffffff
+        border-radius: 16px
+        padding: 32px 35px 0 35px
+
+        img 
+            padding-top: 20px
+            margin-bottom: 15px
+
+        p 
+            font-style: normal
+            font-weight: 500
+            font-size: 1.2em
+            line-height: 122%
+            color: #2B2D3A            
+
+        button
+            width: 100%
+            cursor: pointer
+            background-color: #397DFF
+            border: none
+            border-radius: 6px
+            color: #ffffff
+            margin: 0
+            font-family: "Roboto-Light", sans-serif
+            font-size: 1em
+            letter-spacing: 1px
+            padding: 15px 0
+            margin-bottom: 10px
+
+        &--close
+            position: absolute
+            top: 0%
+            right: 0%
+            transform: scale(0.4)
+            cursor: pointer
+            z-index: 9
 
 .active
     span:nth-child(1)

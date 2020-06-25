@@ -30,13 +30,13 @@
                             <div class="nav__li nav__li--about nav__mobile--about"><a href="#about">О компании</a></div>
                             <div class="nav__li nav__li--solutions nav__mobile--solutions"><a href="#solutions">Готовые решения</a></div>
                             <div class="nav__li nav__li--contacts nav__mobile--contacts"><a href="#contacts">Контакты</a></div>
-                            <div class="nav__li nav__li--mail nav__mobile--mail"><a href="">
+                            <div class="nav__li nav__li--mail"><a href="">
                                 <div class="mail">
                                     <div class="mail--img"><img src="./img/mail_icon.png"></div>
                                     <div class="mail--text">info@sld-store.tu</div>
                                 </div>
                             </a></div>
-                            <div class="nav__li nav__li--phone nav__mobile--phone"><a href="#phone">
+                            <div class="nav__li nav__li--phone"><a href="#phone">
                                 <div class="phone">
                                     <div class="phone--img"><img src="./img/phone_icon.png"></div>
                                     <div class="phone--text">
@@ -46,8 +46,14 @@
                                 </div>
                             </a>
                             </div>
-                            <div class="nav__li nav__li--about nav__mobile--about"><a href="#about">О компании</a></div>
-                            <div class="nav__li nav__li--about nav__mobile--about"><a href="#about">О компании</a></div>
+                            <div class="nav__mobile--phone"><button class="phone__button">Заполнить бриф</button></div>
+                            <div class="nav__mobile--mail"><a href="#mail">
+                                <h4>Напишите нам</h4>
+                                <div class="mobile__mail">
+                                    <div class="mobile__img"><img src="./img/mail_icon.png"></div>
+                                    <div class="mobile__text">info@sld-store.tu</div>
+                                </div>
+                            </a></div>
                         </div>
                     </div> 
                 </div>
@@ -58,12 +64,19 @@
                         <input type="text" class="nav__input nav__input--name" placeholder="Имя*">
                         <input type="text" class="nav__input nav__input--phone" placeholder="Телефон*">
                         <div class="nav__input nav__input--accept">
-                            <input type="checkbox"  name="accept" id="">
+                            <input type="checkbox"  name="accept">
                             <p>Я согласен с условиями обработки <a href="#">персональных данных</a></p>
                         </div>
                         <input type="submit" class="nav__submit" value="Отправить">
                     </form>
                     <div><img class="nav__popup--close" src="./img/close.png" alt=""></div>
+                </div>
+                <div class="nav__answer--hide">
+                    <img src="img/answer.png">
+                    <p>Ваша заявка успешно отправлена</p>
+                    <p>Ожидайте звонка в боижайшее время</p>
+                    <button class="answer__button">Ок</button>
+                    <div><img class="nav__answer--close" src="./img/close.png" alt=""></div>
                 </div>
             </nav>
         </div>

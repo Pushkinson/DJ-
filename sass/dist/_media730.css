@@ -1,0 +1,10 @@
+@media only screen and (max-width: 730px) {
+  .nav__popup {
+    top: 12%;
+    left: 7%;
+  }
+  .nav__answer {
+    top: 12%;
+    left: 7%;
+  }
+}

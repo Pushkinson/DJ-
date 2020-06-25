@@ -13,6 +13,18 @@ $(document).ready(function () {
   });
   $('.nav__popup--close').click(function () {
     $('.nav__popup--hide').removeClass('nav__popup');
+  });
+  $('.nav__mobile--phone').click(function () {
+    $('.nav__popup--hide').toggleClass('nav__popup');
+  });
+  $('.nav__submit').click(function () {
+    $('.nav__answer--hide').toggleClass('nav__answer');
+  });
+  $('.nav__answer--close').click(function () {
+    $('.nav__answer--hide').removeClass('nav__answer');
+  });
+  $('.answer__button').click(function () {
+    $('.nav__answer--hide').removeClass('nav__answer');
   }); // $('.slider__for').slick({
   //   slidesToShow: 1,
   //   slidesToScroll: 1,

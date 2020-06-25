@@ -51,6 +51,23 @@
     padding: 15px 0;
     margin-left: 25px;
   }
+  .nav__li--mail {
+    display: none;
+  }
+  .nav__li--phone {
+    display: none;
+  }
+  .nav__input--accept p {
+    font-size: 0.8em;
+  }
+  .nav__popup {
+    top: 12%;
+    left: 17%;
+  }
+  .nav__answer {
+    top: 12%;
+    left: 17%;
+  }
   .active__menu {
     display: flex;
   }
@@ -82,14 +99,68 @@
     padding-left: 3px;
     padding-right: 2px;
   }
-  .nav__mobile--mail {
-    order: 1;
-    border-bottom: 1px solid rgba(6, 7, 19, 0.1);
-  }
   .nav__mobile--phone {
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
     border-bottom: none;
+    margin: 50px 0 20px 0;
   }
-  .nav__mobile--phone::before {
-    content: "1";
+  .phone__button {
+    width: 100%;
+    cursor: pointer;
+    background-color: #397DFF;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    margin: 0;
+    font-family: "Roboto-Light", sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 15px 0;
+  }
+  .nav__mobile--mail {
+    align-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    min-height: 80px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .nav__mobile--mail h4 {
+    margin: 30px 0 20px 0;
+    font-size: 1.6em;
+  }
+  .mobile__mail {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    align-self: stretch;
+    transition: 0.3s;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+  .mobile__img {
+    margin-right: 20px;
+  }
+  .mobile__text {
+    margin-left: 8px;
+    color: #397DFF;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 22px;
+  }
+  .block__img--1 {
+    flex-basis: 40%;
+    background: url("../img/block-img-1(980).png");
+    background-size: contain;
+    background-position: 50% 50%;
   }
 }
